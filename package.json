@@ -10,10 +10,10 @@
   "license": "Apache License",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dan-sazonov/pb2.git"
+    "url": "https://github.com/dan-sazonov/pb2-site.git"
   },
   "bugs": {
-    "url": "https://github.com/dan-sazonov/pb2/issues"
+    "url": "https://github.com/dan-sazonov/pb2-site/issues"
   },
   "scripts": {
     "build": "gulp build",
