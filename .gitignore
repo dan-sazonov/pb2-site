@@ -7,5 +7,5 @@ dist
 src/js/tmp/
 log.json
 TODO
-/src/css/main.css.map
-/src/css/main.css
+*.css.map
+*main.css
