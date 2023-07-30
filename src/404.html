@@ -1,0 +1,67 @@
+---
+layout: empty
+---
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Страница не найдена</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    html {
+      color: #888;
+      display: table;
+      font-family: sans-serif;
+      height: 100%;
+      text-align: center;
+      width: 100%;
+    }
+
+    body {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 2em auto;
+    }
+
+    h1 {
+      color: #555;
+      font-size: 2em;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 1em auto;
+      width: 280px;
+    }
+
+    @media only screen and (max-width: 280px) {
+
+      body,
+      p {
+        width: 95%;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        margin: 0 0 0.3em;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+<h1>Та самая <span style="color: #ff6000">404</span></h1>
+<p>Иногда и такое случается. Давай сделаем вид что ничего не было, окей?</p>
+<p>Вернись, пожалуйста, на <a href="index.html">главную</a>, или напиши <a href="https://vk.com/dan_sazonov">разработчику</a>,
+  если ты думаешь, что это его косяк</p>
+</body>
+
+</html>
+<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->

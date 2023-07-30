@@ -1,0 +1,98 @@
+@use "normalize";
+@use "preset";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+$baseColor: #ff6000;
+$headerColor: #373A3C;
+
+* {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.base_color {
+  color: $baseColor;
+}
+
+.main_header {
+  color: $headerColor;
+}
+
+header {
+  background: $baseColor;
+
+  .logo {
+    max-width: 2.5rem;
+  }
+
+  a {
+    font-weight: 500 !important;
+  }
+}
+
+.preview_photo {
+  background: url("team.jpg") center center no-repeat;
+  background-size: cover;
+
+  * {
+    font-weight: bold;
+    font-size: 7rem;
+  }
+}
+
+.events {
+  #carouselExampleCaptions {
+    max-width: 70% !important;
+  }
+  .carousel-inner {
+    p {
+      font-weight: bold;
+      font-size: 3rem;
+      color: $baseColor;
+    }
+  }
+}
+
+.news, .partners {
+  .btn-outline-primary:hover {
+    color: #fff;
+    background-color: $baseColor;
+    border-color: $baseColor;
+  }
+
+  .btn-outline-primary {
+    color: $baseColor;
+    border-color: $baseColor;
+  }
+}
+
+.partners {
+  .btn-outline-primary {
+    width: 100%;
+  }
+}
+
+.team {
+  img {
+    max-width: 10rem;
+    margin-bottom: 1rem ;
+  }
+  a {
+    color: $baseColor;
+    text-decoration: none!important;
+    font-weight: bold;
+  }
+  a:hover {
+    color: $baseColor!important;
+    text-decoration: underline!important;
+  }
+  a, p {
+    text-align: center;
+  }
+  .elin {
+    font-weight: bolder;
+  }
+}
+
+.notes {
+  color: $baseColor;
+}

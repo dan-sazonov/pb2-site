@@ -1,0 +1,45 @@
+{
+  "name": "pb2",
+  "private": true,
+  "homepage": "https://pb2.online/",
+  "author": {
+    "name": "Dan Sazonov",
+    "email": "p-294803@yandex.com",
+    "url": "https://github.com/dan-sazonov"
+  },
+  "license": "Apache License",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dan-sazonov/pb2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dan-sazonov/pb2/issues"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cssbeautify": "^3.0.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^5.1.0",
+    "gulp-strip-css-comments": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "panini": "^1.7.2",
+    "sass": "^1.56.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}
