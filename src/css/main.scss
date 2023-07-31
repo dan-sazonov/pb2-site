@@ -27,6 +27,17 @@ header {
   a {
     font-weight: 500 !important;
   }
+
+  .icon-rutube {
+    background: url("/img/icon-rutube.svg") center center no-repeat;
+    background-size: cover;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  i {
+    color: #ffffff;
+  }
 }
 
 .preview_photo {
