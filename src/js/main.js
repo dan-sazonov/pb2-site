@@ -1,4 +1,5 @@
 //= components/script.js
+//= components/up-btn.js
 
 
 const windowHeight = $(window).height();
