@@ -108,3 +108,10 @@ header {
 .notes {
   color: $baseColor;
 }
+
+
+footer {
+  .footer-links a {
+    text-decoration: none !important;
+  }
+}
