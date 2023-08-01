@@ -156,6 +156,10 @@ function copyImgDir() {
   return src(`${srcPath}img/**/*`).pipe(dest(`${path.build.html}/img`))
 }
 
+function copyStaticDir() {
+  return src(`${srcPath}static/**/*`).pipe(dest(`${path.build.html}/static`))
+}
+
 function watchFiles() {
   gulp.watch([path.watch.html], html)
   gulp.watch([path.watch.css], css)
@@ -164,7 +168,7 @@ function watchFiles() {
 }
 
 // const build = gulp.series(clean, gulp.parallel(html, css, js, images, webpImages, copyFiles))
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, copyFiles, copyImgDir))
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, copyFiles, copyImgDir, copyStaticDir))
 const watch = gulp.parallel(build, watchFiles, serve)
 
 
@@ -175,6 +179,7 @@ exports.images = images
 exports.webpImages = webpImages
 exports.copyFiles = copyFiles
 exports.copyImgDir = copyImgDir
+exports.copyStaticDir = copyStaticDir
 exports.clean = clean
 exports.build = build
 exports.watch = watch
