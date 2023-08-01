@@ -55,7 +55,22 @@ function serve() {
 }
 
 
+function articles() {
+  panini.refresh()
+  return src("src/a/*.html", {base: srcPath + "src/"})
+    .pipe(plumber())
+    .pipe(panini({
+      root: srcPath,
+      layouts: srcPath + "tpl/layouts/",
+      partials: srcPath + "tpl/partials/"
+    }))
+    .pipe(dest("dist/a"))
+    .pipe(browserSync.reload({stream: true}));
+}
+
+
 function html() {
+  articles()
   panini.refresh()
   return src(path.src.html, {base: srcPath})
     .pipe(plumber())
