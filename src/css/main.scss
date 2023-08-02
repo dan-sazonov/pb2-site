@@ -182,3 +182,16 @@ footer {
   background-clip: padding-box;
   background-size: auto;
 }
+
+.carousel-inner a {
+  font-size: inherit!important;
+  font-weight: inherit!important;
+  text-decoration: inherit!important;
+  color: inherit!important;
+}
+.carousel-inner a:hover {
+  font-size: inherit!important;
+  font-weight: inherit!important;
+  text-decoration: underline!important;
+  color: inherit!important;
+}
