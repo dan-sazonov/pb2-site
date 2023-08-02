@@ -13,7 +13,7 @@ $headerLogoSize: 1.5rem;
   color: $baseColor;
 }
 
-.main_header {
+.main-page h2 {
   color: $headerColor;
 }
 
@@ -145,6 +145,16 @@ footer {
 
 .article-aside {
   a:hover {
-    text-decoration: underline!important;
+    text-decoration: underline !important;
   }
+}
+
+.scnd-preview-scroll {
+  color: $baseColor;
+  text-decoration: none;
+}
+
+.scnd-preview-scroll:hover {
+  color: $baseColor!important;
+  text-decoration: underline;
 }
