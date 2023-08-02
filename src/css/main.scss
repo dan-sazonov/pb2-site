@@ -136,8 +136,15 @@ footer {
   background-color: #FF510081;
   border-color: white;
 }
+
 #btn-back-to-top:hover {
   color: #fff;
   background-color: $baseColor;
   border-color: #FF5100FF;
+}
+
+.article-aside {
+  a:hover {
+    text-decoration: underline!important;
+  }
 }
