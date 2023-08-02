@@ -158,3 +158,27 @@ footer {
   color: $baseColor!important;
   text-decoration: underline;
 }
+
+.info-cont div:nth-child(1) {
+  background-image: url("/img/info-1-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: padding-box;
+  background-size: auto;
+}
+
+.info-cont div:nth-child(2) {
+  background-image: url("/img/info-2-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: padding-box;
+  background-size: auto;
+}
+
+.info-cont div:nth-child(3) {
+  background-image: url("/img/info-3-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: padding-box;
+  background-size: auto;
+}
