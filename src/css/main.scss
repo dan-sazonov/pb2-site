@@ -80,6 +80,14 @@ header {
     color: $baseColor;
     border-color: $baseColor;
   }
+  .btn-primary {
+    background-color: $baseColor;
+    border-color: $baseColor;
+  }
+  .btn-primary:hover {
+    background-color: #de5500 !important;
+    border-color: $baseColor;
+  }
 }
 
 .partners {
