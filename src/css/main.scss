@@ -49,8 +49,9 @@ header {
     font-weight: bold;
     font-size: 7rem;
   }
+
   i:hover {
-    text-shadow: #cecece 0 4px 6px!important;
+    text-shadow: #cecece 0 4px 6px !important;
   }
 }
 
@@ -158,7 +159,7 @@ footer {
 }
 
 .link-main:hover {
-  color: $baseColor!important;
+  color: $baseColor !important;
   text-decoration: underline;
 }
 
@@ -187,16 +188,17 @@ footer {
 }
 
 .carousel-inner a {
-  font-size: inherit!important;
-  font-weight: inherit!important;
-  text-decoration: inherit!important;
-  color: inherit!important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  text-decoration: inherit !important;
+  color: inherit !important;
 }
+
 .carousel-inner a:hover {
-  font-size: inherit!important;
-  font-weight: inherit!important;
-  text-decoration: underline!important;
-  color: inherit!important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  text-decoration: underline !important;
+  color: inherit !important;
 }
 
 .news div.row {
@@ -205,14 +207,15 @@ footer {
 
 
 .page-link {
-      color: $baseColor!important;
+  color: $baseColor !important;
 }
+
 .active .page-link {
-  color: white!important;
-  background-color: $baseColor!important;
-  border-color: $baseColor!important;
+  color: white !important;
+  background-color: $baseColor !important;
+  border-color: $baseColor !important;
 }
 
 .disabled .page-link {
-  color: #6c757d!important;
+  color: #6c757d !important;
 }
