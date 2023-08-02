@@ -202,3 +202,17 @@ footer {
 .news div.row {
   margin: 1.5rem auto;
 }
+
+
+.page-link {
+      color: $baseColor!important;
+}
+.active .page-link {
+  color: white!important;
+  background-color: $baseColor!important;
+  border-color: $baseColor!important;
+}
+
+.disabled .page-link {
+  color: #6c757d!important;
+}
