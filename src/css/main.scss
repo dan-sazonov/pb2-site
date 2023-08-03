@@ -248,3 +248,11 @@ footer {
 img.img-darkness {
   filter: brightness(40%) !important;
 }
+
+.list-students {
+  list-style-type: "✔️️";
+  li {
+    padding-left: .5rem;
+    margin-bottom: .5rem;
+  }
+}
