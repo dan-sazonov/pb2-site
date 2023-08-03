@@ -16,24 +16,24 @@ og-relurl: /notes
       всем, что тебе интересно</p>
 
     <div class="d-flex justify-content-center">
-      <div id="carouselNotesCaptions" class="carousel slide align-self-center mb-3" data-bs-ride="carousel">
+      <div class="carousel slide align-self-center mb-3" data-bs-ride="carousel" id="carouselNotesCaptions">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselNotesCaptions" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselNotesCaptions" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselNotesCaptions" data-bs-slide-to="2"
-                  aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselNotesCaptions" data-bs-slide-to="3"
-                  aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselNotesCaptions" data-bs-slide-to="4"
-                  aria-label="Slide 5"></button>
+          <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                  data-bs-target="#carouselNotesCaptions" type="button"></button>
+          <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselNotesCaptions"
+                  type="button"></button>
+          <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselNotesCaptions"
+                  type="button"></button>
+          <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carouselNotesCaptions"
+                  type="button"></button>
+          <button aria-label="Slide 5" data-bs-slide-to="4" data-bs-target="#carouselNotesCaptions"
+                  type="button"></button>
         </div>
 
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="content/vid-1.jpg" class="d-block w-100 img-darkness" alt="...">
+            <img alt="..." class="d-block w-100 img-darkness" src="content/vid-1.jpg">
             <div class="carousel-caption d-none d-md-block">
               <h5 class="text-uppercase fw-bold">Общежития ГУАП</h5>
               <p><a href="#">Смотреть на Rutube</a></p>
@@ -41,7 +41,7 @@ og-relurl: /notes
           </div>
 
           <div class="carousel-item">
-            <img src="content/vid-2.jpg" class="d-block w-100 img-darkness" alt="...">
+            <img alt="..." class="d-block w-100 img-darkness" src="content/vid-2.jpg">
             <div class="carousel-caption d-none d-md-block">
               <h5 class="text-uppercase fw-bold">Что такое профсоюз</h5>
               <p><a href="#">Смотреть на Rutube</a></p>
@@ -49,7 +49,7 @@ og-relurl: /notes
           </div>
 
           <div class="carousel-item">
-            <img src="content/vid-3.jpg" class="d-block w-100 img-darkness" alt="...">
+            <img alt="..." class="d-block w-100 img-darkness" src="content/vid-3.jpg">
             <div class="carousel-caption d-none d-md-block">
               <h5 class="text-uppercase fw-bold">Должен знать каждый</h5>
               <p><a href="#">Смотреть на Rutube</a></p>
@@ -57,7 +57,7 @@ og-relurl: /notes
           </div>
 
           <div class="carousel-item">
-            <img src="content/vid-4.jpg" class="d-block w-100 img-darkness" alt="...">
+            <img alt="..." class="d-block w-100 img-darkness" src="content/vid-4.jpg">
             <div class="carousel-caption d-none d-md-block">
               <h5 class="text-uppercase fw-bold">Стипендии и другие выплаты</h5>
               <p><a href="#">Смотреть на Rutube</a></p>
@@ -65,7 +65,7 @@ og-relurl: /notes
           </div>
 
           <div class="carousel-item">
-            <img src="content/vid-5.jpg" class="d-block w-100 img-darkness" alt="...">
+            <img alt="..." class="d-block w-100 img-darkness" src="content/vid-5.jpg">
             <div class="carousel-caption d-none d-md-block">
               <h5 class="text-uppercase fw-bold">Квест Playboy</h5>
               <p><a href="#">Смотреть на Rutube</a></p>
@@ -73,42 +73,43 @@ og-relurl: /notes
           </div>
 
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselNotesCaptions"
-                  data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselNotesCaptions"
+                  type="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
             <span class="visually-hidden">Предыдущий</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselNotesCaptions"
-                  data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselNotesCaptions"
+                  type="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
             <span class="visually-hidden">Следующий</span>
           </button>
         </div>
       </div>
     </div>
 
-    <p class="text-center fs-5">Больше видео на нашем <a href="#" class="link-main">Rutube</a></p>
+    <p class="text-center fs-5">Больше видео на нашем <a class="link-main" href="#">Rutube</a></p>
   </section>
 
   <section class="mt-3">
-    <h2 id="tips" class="main_header fs-1">Памятка первокурсника</h2>
+    <h2 class="main_header fs-1" id="tips">Памятка первокурсника</h2>
     <p class="fs-5">Вся важная информация теперь под рукой! Мы подготовили для тебя специальную памятку, которая спасет
       тебя в первые дни учебы: подробные гайды как встать на все учеты, важные контакты, устройство нашего вуза и
       профсоюза и многое другое в pdf-файле на твоем телефоне</p>
-    <a class="btn btn-primary" href="/static/eg.pdf" download role="button">Скачать [180 КБ]</a>
-    <a class="btn btn-outline-primary ms-3" href="/static/eg.pdf" target="_blank" role="button">Открыть онлайн</a>
+    <a class="btn btn-primary" download href="/static/eg.pdf" role="button">Скачать [180 КБ]</a>
+    <a class="btn btn-outline-primary ms-3" href="/static/eg.pdf" role="button" target="_blank">Открыть онлайн</a>
   </section>
 
   <section class="mt-3">
-    <h2 id="finance" class="main_header fs-1">Материальная помощь</h2>
+    <h2 class="main_header fs-1" id="finance">Материальная помощь</h2>
     <p class="fs-5">Матпомощь - средство поддержки нуждающихся студентов, выделяемое не чаще раза в семестр, кроме
       исключительных случаев. Чтобы узнать подробнее, что это такое, можешь ли ты рассчитывать на получение и как как
       заполнить заявление правильно - смотри наши видео или памятку первокурсника</p>
-    <p>Это - список студентов, которые получат деньги в <span class="base_color">августе</span>. Если ты не нашел себя - ничего страшного, скорее
+    <p>Это - список студентов, которые получат деньги в <span class="base_color">августе</span>. Если ты не нашел себя -
+      ничего страшного, скорее
       всего, ты в очереди на другой месяц</p>
 
     <form class="d-inline-flex mw-30 mb-3">
-      <input class="form-control me-2" type="search" placeholder="Быстрый поиск" aria-label="Search">
+      <input aria-label="Search" class="form-control me-2" placeholder="Быстрый поиск" type="search">
       <button class="btn btn-outline-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
 
