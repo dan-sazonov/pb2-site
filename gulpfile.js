@@ -28,19 +28,19 @@ const path = {
     html: distPath,
     css: distPath + "css/",
     js: distPath + "js/",
-    images: distPath + "img/"
+    images: distPath + "content/"
   },
   src: {
     html: srcPath + "*.html",
     css: srcPath + "css/main.scss",
     js: srcPath + "js/*.js",
-    images: srcPath + "img/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}"
+    images: srcPath + "content/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}"
   },
   watch: {
     html: srcPath + "**/*.html",
     js: srcPath + "js/**/*.js",
     css: srcPath + "css/**/*.scss",
-    images: srcPath + "img/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}"
+    images: srcPath + "content/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}"
   },
   clean: "./" + distPath
 }
@@ -55,7 +55,22 @@ function serve() {
 }
 
 
+function articles() {
+  panini.refresh()
+  return src("src/a/*.html", {base: srcPath + "src/"})
+    .pipe(plumber())
+    .pipe(panini({
+      root: srcPath,
+      layouts: srcPath + "tpl/layouts/",
+      partials: srcPath + "tpl/partials/"
+    }))
+    .pipe(dest("dist/a"))
+    .pipe(browserSync.reload({stream: true}));
+}
+
+
 function html() {
+  articles()
   panini.refresh()
   return src(path.src.html, {base: srcPath})
     .pipe(plumber())
@@ -121,7 +136,7 @@ function js() {
 }
 
 function images() {
-  return src(path.src.images, {base: srcPath + "img/"})
+  return src(path.src.images, {base: srcPath + "content/"})
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
       imagemin.mozjpeg({quality: 80, progressive: true}),
@@ -138,7 +153,7 @@ function images() {
 }
 
 function webpImages() {
-  return src(path.src.images, {base: srcPath + "img/"})
+  return src(path.src.images, {base: srcPath + "content/"})
     .pipe(imagewebp())
     .pipe(dest(path.build.images))
 }
@@ -148,8 +163,20 @@ function clean() {
 }
 
 function copyFiles() {
-  return src([`${srcPath}browserconfig.xml`, `${srcPath}.htaccess`, `${srcPath}favicon.ico`, `${srcPath}humans.txt`, `${srcPath}robots.txt`, `${srcPath}LICENSE`, `${srcPath}site.webmanifest`,])
+  return src([`${srcPath}browserconfig.xml`, `${srcPath}.htaccess`, `${srcPath}favicon.ico`, `${srcPath}humans.txt`, `${srcPath}robots.txt`, `${srcPath}LICENSE`, `${srcPath}site.webmanifest`])
     .pipe(dest(path.build.html))
+}
+
+function copyImgDir() {
+  return src(`${srcPath}img/**/*`).pipe(dest(`${path.build.html}/img`))
+}
+
+function copyStaticDir() {
+  return src(`${srcPath}static/**/*`).pipe(dest(`${path.build.html}/static`))
+}
+
+function copyIcoDir() {
+  return src(`${srcPath}ico/**/*`).pipe(dest(`${path.build.html}/ico`))
 }
 
 function watchFiles() {
@@ -160,7 +187,7 @@ function watchFiles() {
 }
 
 // const build = gulp.series(clean, gulp.parallel(html, css, js, images, webpImages, copyFiles))
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, copyFiles))
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, copyFiles, copyImgDir, copyStaticDir, copyIcoDir))
 const watch = gulp.parallel(build, watchFiles, serve)
 
 
@@ -170,6 +197,9 @@ exports.js = js
 exports.images = images
 exports.webpImages = webpImages
 exports.copyFiles = copyFiles
+exports.copyImgDir = copyImgDir
+exports.copyIcoDir = copyIcoDir
+exports.copyStaticDir = copyStaticDir
 exports.clean = clean
 exports.build = build
 exports.watch = watch

@@ -12,205 +12,176 @@ og-relurl: /
 
 <section class="preview_photo w-100 text-white d-flex flex-column justify-content-around">
   <h1 class="text-center text-uppercase">МЫ - ПБ2</h1>
-  <a class="nav-link text-white text-center" href="#about"><i class="bi bi-arrow-down"></i></a>
+  <a class="nav-link text-white text-center" href="#about"><i class="fa-solid fa-chevron-down"></i> </a>
 </section>
 
-<main class="container">
-  <section class="mt-3">
-    <h2 id="about" class="main_header fs-1">О нас</h2>
-    <p class="fs-4"><span class="base_color">Профбюро 2</span> – точка притяжения студентов нашего института. Мы реально
-      помогаем.
-      91% студентов института радиотехники и инфокоммуникационных технологий состоит в профсоюзе.
-      Оформить необходимые льготы? Получить материальную помощь? Заселиться в общагу? Это к нам.
-      Взаимодействуем с деканатом, создали единое инфополе для поступающих в магистратуру.
-      Организовываем мероприятия для студентов.</p>
+<main class="container main-page">
+
+  <section class="mx-3 vh-100 post-preview d-flex flex-column justify-content-between">
+    <article>
+      <h2 class="fs-1 pt-3" id="about">О нас</h2>
+      <p class="fs-4"><span class="base_color">Профбюро 2</span> – точка притяжения студентов нашего института. Мы
+        реально
+        помогаем.
+        91% студентов института радиотехники и инфокоммуникационных технологий состоит в профсоюзе.
+        Оформить необходимые льготы? Получить материальную помощь? Заселиться в общагу? Это к нам.
+        Взаимодействуем с деканатом, создали единое инфополе для поступающих в магистратуру.
+        Организовываем мероприятия для студентов.</p>
+    </article>
+
+    <article>
+      <h2 class="fs-1 text-center mb-5">Цифры ПБ2</h2>
+
+      <div class="info-cont d-flex justify-content-between fs-5">
+        <div class=" d-flex flex-column">
+          <span class="text-center fs-3 mb-3 text-uppercase base_color fw-bold">1148<br>студентов</span>
+          <span>Получают материальную помощь</span>
+        </div>
+
+        <div class=" d-flex flex-column">
+          <span class="text-center fs-3 mb-3 text-uppercase base_color fw-bold">более 15<br>мероприятий</span>
+          <span>Мы организуем для студентов</span>
+        </div>
+
+        <div class=" d-flex flex-column">
+          <span class="text-center fs-3 mb-3 text-uppercase base_color fw-bold">11<br>заведений</span>
+          <span>Предоставляют скидки</span>
+        </div>
+      </div>
+    </article>
+
+    <p class="fs-3 text-center">С нами - уже <span class="base_color">1421</span> студент второго института</p>
+
+    <p class="fs-2 text-center"><a class="link-main" href="#events">Больше о ПБ2
+      <i class="fa-solid fa-arrow-down mx-2"></i></a></p>
   </section>
 
   <section class="mt-3 events d-flex flex-column">
-    <h2 id="events" class="main_header fs-1 mb-3">Ближайшие мероприятия</h2>
+    <h2 class="main_header fs-1 mb-3" id="events">Ближайшие мероприятия</h2>
 
-    <div id="carouselExampleCaptions" class="carousel slide align-self-center" data-bs-ride="carousel">
+    <div class="carousel slide align-self-center mb-3" data-bs-ride="carousel" id="carouselExampleCaptions">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+        <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                data-bs-target="#carouselExampleCaptions" type="button"></button>
+        <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions"
+                type="button"></button>
+        <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions"
+                type="button"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/content/meeting.jpg" class="d-block w-100" alt="...">
+          <img alt="..." class="d-block w-100 img-darkness" src="content/event-1.jpg">
           <div class="carousel-caption d-none d-md-block">
-            <h5 class="text-uppercase fw-bold">Собрание профоргов и активистов</h5>
-            <p>10 июня</p>
+            <h5 class="text-uppercase fw-bold"><a href="/events.html#someEvent">Какое-то меро без описания</a></h5>
+            <p>13 июля</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/content/myvmeste.jpg" class="d-block w-100" alt="...">
+          <img alt="..." class="d-block w-100 img-darkness" src="content/event-2.jpg">
           <div class="carousel-caption d-none d-md-block">
-            <h5 class="text-uppercase fw-bold">Сбор гуманитарной помощи</h5>
-            <p>13 июня</p>
+            <h5 class="text-uppercase fw-bold"><a href="/events.html#someEvent">Еще одно меро без описания</a></h5>
+            <p>13 июля</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/content/hnb.jpg" class="d-block w-100" alt="...">
+          <img alt="..." class="d-block w-100 img-darkness" src="content/event-3.jpg">
           <div class="carousel-caption d-none d-md-block">
-            <h5 class="text-uppercase fw-bold">"Холодно не будет"</h5>
-            <p>27-28 мая</p>
+            <h5 class="text-uppercase fw-bold"><a href="/a/example.html">А это меро с описанием</a></h5>
+            <p>13 июля</p>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions"
+              type="button">
+        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
         <span class="visually-hidden">Предыдущий</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions"
+              type="button">
+        <span aria-hidden="true" class="carousel-control-next-icon"></span>
         <span class="visually-hidden">Следующий</span>
       </button>
     </div>
 
+    <p class="text-center fs-4"><a class="link-main" href="/events.html">Все мероприятия...</a></p>
   </section>
 
   <section class="mt-3 news">
-    <h2 id="news" class="main_header fs-1">Наши новости</h2>
+    <h2 class="main_header fs-1" id="news">Наши новости</h2>
 
-    <div class="row">
+    <div class="container">
+      <div class="row row-cols-3">
+        <div class="col">
+          <div class="card">
+            <img alt="..." class="card-img-top" src="content/hnb2.jpg">
+            <div class="card-body">
+              <span>20 мая</span>
+              <h5 class="card-title">Осталась неделя до "Холодно не будет"</h5>
+              <a class="btn btn-outline-primary" href="/a/example.html">Читать далее...</a>
+            </div>
+          </div>
+        </div>
 
-      <div class="col">
-        <div class="card" style="width: 25rem;">
-          <img src="img/content/hnb2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <span>20 мая</span>
-            <h5 class="card-title">Осталась неделя до "Холодно не будет"</h5>
-            <a href="https://vk.com/wall-9567901_5553" class="btn btn-outline-primary">Читать далее...</a>
+        <div class="col">
+          <div class="card">
+            <img alt="..." class="card-img-top" src="content/szfo.jpg">
+            <div class="card-body">
+              <span>13 мая</span>
+              <h5 class="card-title">Мы - лучшее профбюро в Санкт-Петербурге</h5>
+              <a class="btn btn-outline-primary" href="/a/example.html">Читать далее...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img alt="..." class="card-img-top" src="content/tylider.jpg">
+            <div class="card-body">
+              <span>2 мая</span>
+              <h5 class="card-title">Стал известен состав команды на конкурс “Ты - лидер”</h5>
+              <a class="btn btn-outline-primary" href="/a/example.html">Читать далее...</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col">
-        <div class="card" style="width: 25rem;">
-          <img src="img/content/szfo.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <span>13 мая</span>
-            <h5 class="card-title">Мы - лучшее профбюро в Санкт-Петербурге</h5>
-            <a href="https://vk.com/wall-103362374_4208" class="btn btn-outline-primary">Читать далее...</a>
+      <div class="row row-cols-3">
+        <div class="col">
+          <div class="card">
+            <img alt="..." class="card-img-top" src="content/hnb2.jpg">
+            <div class="card-body">
+              <span>20 мая</span>
+              <h5 class="card-title">Осталась неделя до "Холодно не будет"</h5>
+              <a class="btn btn-outline-primary" href="/a/example.html">Читать далее...</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card" style="width: 25rem;">
-          <img src="img/content/tylider.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <span>2 мая</span>
-            <h5 class="card-title">Стал известен состав команды на конкурс “Ты - лидер”</h5>
-            <a href="https://vk.com/wall-9567901_5458" class="btn btn-outline-primary">Читать далее...</a>
+        <div class="col">
+          <div class="card">
+            <img alt="..." class="card-img-top" src="content/szfo.jpg">
+            <div class="card-body">
+              <span>13 мая</span>
+              <h5 class="card-title">Мы - лучшее профбюро в Санкт-Петербурге</h5>
+              <a class="btn btn-outline-primary" href="/a/example.html">Читать далее...</a>
+            </div>
           </div>
         </div>
-      </div>
 
-    </div>
-
-  </section>
-
-  <section class="mt-3 partners">
-    <h2 id="partners" class="main_header fs-1">С нами работают</h2>
-
-    <div class="row row-cols-1 row-cols-md-4 g-3">
-
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="img/content/go.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">GO! ГЛУБОКОЕ ОБРАЗОВАНИЕ</h5>
-            <p class="card-text">Весенний образовательный форум. Программа обучения составлена таким образом, чтобы сфера, которую выбрал участник, была максимальна раскрыта. </p>
-            <a href="https://vk.com/go_suitd" class="btn btn-outline-primary">Подробнее</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="img/content/mds.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Школа танцев Millenium Dance Studio</h5>
-            <p class="card-text">
-              Приходи, танцуй, развивайся! Школа танцев в Санкт-Петербурге. В школе проходят открытые уроки для всех желающих по символической цене.</p>
-            <a href="https://vk.com/mds_spb" class="btn btn-outline-primary">Подробнее</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100" style="width: 18rem;">
-          <img src="img/content/tandyr.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">О, Тандыр</h5>
-            <p class="card-text">Пары в корпусе на БМ, проголодался? Хочешь съесть шаверму и не отравиться? <br> Тогда тебе в «О, Тандыр». Получи скидку 15% на все меню! </p>
-            <a href="https://vk.com/wall-9567901_5351" class="btn btn-outline-primary">Подробнее</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100" style="width: 18rem;">
-          <img src="img/content/tylider.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Салон красоты "Лимаж"</h5>
-            <p class="card-text">Предлагаем прожить этот семестр красиво, а главное, недорого, вместе с салоном красоты "Лимаж". По продленному профбилету - скидка 15%!</p>
-            <a href="#" class="btn btn-outline-primary">Подробнее</a>
+        <div class="col">
+          <div class="card">
+            <img alt="..." class="card-img-top" src="content/tylider.jpg">
+            <div class="card-body">
+              <span>2 мая</span>
+              <h5 class="card-title">Стал известен состав команды на конкурс “Ты - лидер”</h5>
+              <a class="btn btn-outline-primary" href="/a/example.html">Читать далее...</a>
+            </div>
           </div>
         </div>
       </div>
 
     </div>
-
+    <p class="text-center fs-4"><a class="link-main" href="/news.html">Все новости...</a></p>
   </section>
 
-  <section class="mt-3 mb-4 team">
-    <h2 id="contacts" class="main_header fs-1">Наша команда</h2>
-
-    <div class="d-flex flex-column mt-3">
-      <div class="d-flex justify-content-around">
-
-        <div class="empl d-flex flex-column justify-content-around align-items-center">
-          <img src="img/content/vasya.jpg" class="rounded-circle" alt="...">
-          <a href="https://vk.com/ardvaa" rel="noopener noreferrer" target="_blank" class="text-uppercase">Василиса Ардышева</a>
-          <p>Секретарь профсоюзной организации института</p>
-        </div>
-
-        <div class="empl d-flex flex-column justify-content-around align-items-center">
-          <img src="img/content/elin.jpg" class="rounded-circle" alt="...">
-          <a href="https://vk.com//maxim.elin" rel="noopener noreferrer" target="_blank" class="text-uppercase">Максим Елин</a>
-          <p class="elin">Председатель профсоюзной организации института</p>
-        </div>
-
-        <div class="empl d-flex flex-column justify-content-around align-items-center">
-          <img src="img/content/olya.jpg" class="rounded-circle" alt="...">
-          <a href="https://vk.com/id160770833" rel="noopener noreferrer" target="_blank" class="text-uppercase">Ольга Лифанова</a>
-          <p>Заместитель председателя профсоюзной организации института</p>
-        </div>
-
-      </div>
-      <div class="d-flex justify-content-around">
-
-        <div class="empl d-flex flex-column justify-content-around align-items-center">
-          <img src="img/content/dan.jpg" class="rounded-circle" alt="...">
-          <a href="https://vk.com/dan_sazonov" rel="noopener noreferrer" target="_blank" class="text-uppercase">Даниил Сазонов</a>
-          <p>Ответственный за медиа</p>
-        </div>
-
-        <div class="empl d-flex flex-column justify-content-around align-items-center">
-          <img src="img/content/max.jpg" class="rounded-circle" alt="...">
-          <a href="https://vk.com/lulkerig" rel="noopener noreferrer" target="_blank" class="text-uppercase">Максим Михайлов</a>
-          <p>Ответственный за партнеров и ПК</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
 </main>
