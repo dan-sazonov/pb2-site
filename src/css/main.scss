@@ -69,7 +69,7 @@ header {
   }
 }
 
-.news, .partners, .events-block {
+.news, .partners, .events-block, .notes {
   .btn-outline-primary:hover {
     color: #fff;
     background-color: $baseColor;
@@ -80,13 +80,21 @@ header {
     color: $baseColor;
     border-color: $baseColor;
   }
+
   .btn-primary {
     background-color: $baseColor;
     border-color: $baseColor;
   }
+
   .btn-primary:hover {
     background-color: #de5500 !important;
     border-color: $baseColor;
+  }
+
+  .btn-primary:active, .btn-primary:focus {
+    background-color: $baseColor;
+    border-color: $baseColor;
+    box-shadow: 0 0 0 .25rem rgb(255, 139, 71);
   }
 }
 
@@ -221,11 +229,12 @@ footer {
 }
 
 .event-info a {
-  text-decoration: none!important;
+  text-decoration: none !important;
   color: $baseColor !important;
 }
+
 .event-info a:hover {
-  text-decoration: underline!important;
+  text-decoration: underline !important;
 }
 
 #carouselNotesCaptions {
