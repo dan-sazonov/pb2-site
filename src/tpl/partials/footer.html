@@ -48,14 +48,26 @@
 
 </footer>
 
+
+
+
+
 <div id="firstAlertCont" class="fixed-bottom cookie-alert alert alert-primary fade show flex-column" role="alert">
-  <p>
-    Мы используем куки.<br>
-    <a href="404.html" class="alert-link">Здесь</a> можно прочитать, что это такое и зачем нам эти данные.
-  </p>
-  <button id="firstAlertBtn" type="button" class="btn btn-primary cookie-alert__close-btn align-self-center"
-          data-dismiss="alert"
-          aria-label="Close">
-    <span aria-hidden="true">Хорошо</span>
-  </button>
+  <h1 class="text-center">Не так быстро...</h1>
+  <p class="text-center fs-4">Ты открыл бета-версию сайта для разработчиков. Учти, что здесь может быть представлена некорректная информация, и сайт может работать неправильно на некоторых устройствах и браузерах</p>
+  <div class="d-flex justify-content-center">
+    <button id="firstAlertBtn2" type="button" class="btn btn-outline-danger cookie-alert__close-btn align-self-center"
+            data-dismiss="alert"
+            aria-label="Close">
+      <span aria-hidden="true" class="fs-6">Я разработчик и лезу через devtools, о рисках знаю</span>
+    </button>
+
+    <button id="firstAlertBtn" type="button" class="btn btn-primary cookie-alert__close-btn align-self-center ms-4"
+            data-dismiss="alert"
+            aria-label="Close">
+      <span aria-hidden="true" class="fs-6">Я Максим Елин</span>
+    </button>
+  </div>
+  <p class="text-muted text-center">это кнопки если что</p>
+
 </div>
