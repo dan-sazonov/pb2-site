@@ -1,3 +1,6 @@
+document.getElementById("firstAlertCont").classList.add("d-none");
+// убрать в будущем, пока на время работы чтобы не мешало
+
 document.getElementById("firstAlertBtn").onclick = function () {
   document.getElementById("firstAlertCont").classList.add("d-none");
 };
