@@ -69,6 +69,13 @@ header {
     max-width: 70% !important;
   }
 
+  @media (max-width: 576px) {
+    #carouselExampleCaptions {
+      max-width: 100vw !important;
+      width: 100vw !important;
+    }
+  }
+
   .carousel-inner {
     p {
       font-weight: bold;
