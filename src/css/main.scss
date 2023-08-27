@@ -5,6 +5,7 @@
 $baseColor: #ff6000;
 $headerColor: #373A3C;
 $headerLogoSize: 1.5rem;
+
 * {
   font-family: 'Montserrat', sans-serif;
 }
@@ -50,6 +51,13 @@ header {
     font-size: 7rem;
   }
 
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+
   i:hover {
     text-shadow: #cecece 0 4px 6px !important;
   }
@@ -69,7 +77,11 @@ header {
   }
 }
 
-.news, .partners, .events-block, .notes, .partners-page {
+.news,
+.partners,
+.events-block,
+.notes,
+.partners-page {
   .btn-outline-primary:hover {
     color: #fff;
     background-color: $baseColor;
@@ -91,12 +103,16 @@ header {
     border-color: $baseColor;
   }
 
-  .btn-primary:active, .btn-primary:focus {
+  .btn-primary:active,
+  .btn-primary:focus {
     background-color: $baseColor;
     border-color: $baseColor;
   }
 
-  .form-control:active, .form-control:focus, .btn:active, .btn:focus {
+  .form-control:active,
+  .form-control:focus,
+  .btn:active,
+  .btn:focus {
     box-shadow: 0 0 0 .25rem rgba(255, 139, 71, 0.53);
 
   }
