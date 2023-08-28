@@ -1,7 +1,7 @@
 function getFuckingBullshit() {
   return `
-  v3.0.0 (beta predeploy)
-  Сборка фронта: bcf4e528
+  v3.0.1 (beta predeploy)
+  Сборка фронта: cbbb1cc
 
   Движок:
   ${window.navigator.appCodeName};
