@@ -1,17 +1,7 @@
-document.getElementById("firstAlertBtn").onclick = function () {
-  document.getElementById("firstAlertCont").classList.add("d-none");
-};
-
-document.getElementById("firstAlertBtn2").onclick = function () {
-
-  document.getElementById("noScripts").classList.add("d-none");
-  alert("Да нифига ты не разработчик!");
-};
-
 function getFuckingBullshit() {
   return `
-  v3.0.0 (beta predeploy)
-  Сборка фронта: bcf4e528
+  v3.0.1 (beta predeploy)
+  Сборка фронта: cbbb1cc
 
   Движок:
   ${window.navigator.appCodeName};

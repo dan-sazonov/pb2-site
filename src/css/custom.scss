@@ -1,0 +1,32 @@
+.c_fs-5 {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 991px) {
+  .c_fs-lg-4 {
+    font-size: 1.5rem !important;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .c_border-top-tolg {
+    border-top: 1px solid #f1f1f170;
+  }
+}
+
+
+.c_carousel-tosm-vw-100 {
+  max-width: 70% !important;
+}
+
+@media (max-width: 576px) {
+  .c_carousel-tosm-vw-100 {
+    max-width: 100vw !important;
+    width: 100vw !important;
+  }
+}
+
+.c_overflow-hidden {
+  overflow: hidden !important;
+}
